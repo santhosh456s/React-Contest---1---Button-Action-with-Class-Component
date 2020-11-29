@@ -4,17 +4,20 @@ import "../styles/App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    pa: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
+    paragraph: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
   }
 
   render() {
     return (
       <div id="main">
         {/* Do not remove this main div!! */}
-        <button id="click" onClick={() => this.srtState({ pa: this.state.pa })}>
-          Click
+        <button
+          id="click"
+          onClick={() => this.srtState({ paragraph: this.state.paragraph })}
+        >
+          click
         </button>
-        <p id="para">{this.pa}</p>
+        <p id="para">{this.paragraph}</p>
       </div>
     );
   }
