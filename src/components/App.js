@@ -19,7 +19,7 @@ class App extends Component {
           onClick={() => this.setState({ paragraph: this.state.paragraph })}
         >
         </button>
-        <p id="para">{this.state.paragraph}</p>
+        <paragraph id="para">{this.state.paragraph}</paragraph>
       </div>
     );
   }
