@@ -17,7 +17,7 @@ class App extends Component {
         >
           click
         </button>
-        <p id="para">{this.paragraph}</p>
+        <p id="para">{this.state.paragraph}</p>
       </div>
     );
   }
