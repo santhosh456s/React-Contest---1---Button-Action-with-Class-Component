@@ -13,7 +13,7 @@ class App extends Component {
         {/* Do not remove this main div!! */}
         <button
           id="click"
-          onClick={() => this.srtState({ paragraph: this.state.paragraph })}
+          onClick={() => this.setState({ paragraph: this.state.paragraph })}
         >
           click
         </button>
