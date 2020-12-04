@@ -3,11 +3,11 @@ import "../styles/App.css";
 
 class App extends Component {
   constructor(props) {
-	super(props);
-	state={
-		paragraph: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
-	}
-   
+    super(props);
+    this.state = {
+      paragraph:
+        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+    };
   }
 
   render() {
@@ -18,6 +18,7 @@ class App extends Component {
           id="click"
           onClick={() => this.setState({ paragraph: this.state.paragraph })}
         >
+          Click
         </button>
         <paragraph id="para">{this.state.paragraph}</paragraph>
       </div>
